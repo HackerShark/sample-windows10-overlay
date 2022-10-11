@@ -1,0 +1,21 @@
+name: sample-windows10-overlay
+title: sample-windows10-overlay
+maintainer: "Project" Organization
+copyright: 
+copyright_email: 
+license: Apache-2.0
+summary: Sample Project's Overlay InSpec Validation Profile for Windows 10
+version: 0.1.0
+inspec_version: ">= 4.0"
+
+depends:
+- name: microsoft-windows-10-stig-baseline
+  url: https://github.com/mitre/microsoft-windows-10-stig-baseline/archive/master.tar.gz
+
+inputs:
+
+  - name: min_pass_len
+    desc: "Sets the minimum length of passwords [14]"
+    type: Numeric
+    value: 32
+    profile: microsoft-windows-10-stig-baseline
