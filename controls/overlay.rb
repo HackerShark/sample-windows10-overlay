@@ -1,4 +1,4 @@
-include_controls 'redhat-enterprise-linux-8-stig-baseline' do
+include_controls 'microsoft-windows-10-stig-baseline' do
 
     control 'V-63319' do
         impact 0.0
